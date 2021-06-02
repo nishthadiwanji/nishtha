@@ -33,7 +33,15 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
-
+                        <li class="nav-item">
+                            <a href="/" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{route('product.create')}}" class="nav-link">Add Product</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{route('product.index')}}" class="nav-link">Manage Product</a>
+                        </li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->

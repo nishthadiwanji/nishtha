@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+// use App\Http\Controllers\Product\ProductController;
 
 /*
 |--------------------------------------------------------------------------
@@ -33,4 +34,8 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::group(['namespace'=>'Role'],function(){ 
     Route::resource('role','RoleController',['only'=>['index','create','store','edit','update','destroy']]);
+});
+
+Route::group(['namespace'=>'Product'],function(){
+    Route::resource('product','ProductController',['except'=>['show']]);
 });
