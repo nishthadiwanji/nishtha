@@ -22,7 +22,7 @@
 				<tr>
 					<td>{{$product->product_name}}</td>
 					<td>{{$product->description}}</td>
-					<td>{{$product->created_at->diffForHumans()}}</td>
+					<td>{{$product->created_at}}</td>
 					<td>
 						<a class="label label-primary" href="{{route('product.edit',[$product->id_token])}}"><i class="fa fa-edit" title="edit product"></i></a> &nbsp; 
 						<a class="text-danger label label-danger product-delete" href="javascript:;" data-action="{{route('product.destroy',$product->id_token)}}"><i class="fa fa-trash" title="delete product"></i></a>
